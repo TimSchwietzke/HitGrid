@@ -1,0 +1,38 @@
+# --- JetBrains / PhpStorm ---
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# --- Betriebssystem Dateien ---
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Node.js & NPM (WICHTIG für Tailwind) ---
+node_modules/
+
+# Logs (falls Fehler auftreten)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Tailwind CSS / Build Output ---
+
+# Standard Build-Ordner (oft genutzt)
+dist/
+build/
+public/build/
+
+# Temporäre Cache-Dateien (z.B. von PostCSS oder Vite)
+.cache/
+.parcel-cache/
+
+# --- Environment Variablen ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
