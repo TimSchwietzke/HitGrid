@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+
+@theme {
+    @charset "UTF-8";
+
+    --font-sans: "Outfit", sans-serif;
+}
+@layer components {
+    .glass {
+        @apply bg-white/[0.03] backdrop-blur-[10px];
+
+        @apply border-1 border-solid border-white/[0.05];
+    }
+
+    .modern-font {
+        @apply font-[Outfit];
+    }
+}
