@@ -1,11 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <title>HitGrid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HitGrid | The HitStar Expansion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
     <link href="/src/css/output.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
 </head>
-<body class="flex items-center justify-center">
-    <p>Hallo Welt</p>
+<body>
+
+<div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<header id="header">
+    <nav>
+        <ul>
+            <li>
+                <a href="#hero">Start</a>
+            </li>
+            <li>
+                <a href="#game">Game</a>
+            </li>
+            <li>
+                <a href="#bingo">Bingo</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main id="main" class="relative">
+
+    <section id="hero">
+        <div>
+            <div>
+                <span></span>
+                HitStar Companion
+            </div>
+
+            <h1>
+                Music Bingo <br>
+                <span>
+                    Reimagined.
+                </span>
+            </h1>
+
+            <p>
+                Erweitere dein Spielerlebnis. Generiere Bingo-Karten, würfle Kategorien und verbinde dich (bald) mit
+                Spotify.
+            </p>
+
+            <div>
+                <a href="#game">
+                    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 opacity-0 group-hover:opacity-20 transition-opacity"></div>
+                    <span class="relative">Spiel starten</span>
+                </a>
+                <a href="#bingo">
+                    Karte erstellen
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="game">
+        <div>
+            <div>
+                <h2>Das Dashboard</h2>
+                <p>Würfle Kategorien oder checke deine Bingo-Karte.</p>
+            </div>
+
+            <div>
+                <div>
+                    <div>
+                        <span>🎲</span>
+                    </div>
+                    <h3>Kategorie würfeln</h3>
+                    <p>Zufällige Auswahl aus Standard & Custom Pools</p>
+                </div>
+
+                <div>
+                    <div></div>
+                    <div>
+
+                    </div>
+                    <div>
+                        <h3>Aktive Bingo Karte</h3>
+                        <p>Spiel läuft...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Entwickelt als Erweiterung für HitStar - s/o an Leo.</p>
+</footer>
+
 </body>
 </html>
