@@ -2,18 +2,29 @@
 
 
 @theme {
-    @charset "UTF-8";
+    --animate-blob: blob 7s infinite;
+
+    @keyframes blob {
+        0% { transform: translate(0px, 0px) scale(1); }
+        33% { transform: translate(30px, -50px) scale(1.1); }
+        66% { transform: translate(-20px, 20px) scale(0.9); }
+        100% { transform: translate(0px, 0px) scale(1); }
+    }
 
     --font-sans: "Outfit", sans-serif;
 }
 @layer components {
-    .glass {
-        @apply bg-white/[0.03] backdrop-blur-[10px];
 
-        @apply border-1 border-solid border-white/[0.05];
-    }
 
-    .modern-font {
-        @apply font-[Outfit];
+    .bg-blob {
+        @apply absolute;
+        @apply rounded-full;
+        @apply mix-blend-screen;
+        @apply filter;
+
+        @apply blur-3xl;
+        @apply opacity-30;
+        @apply animate-blob;
+        @apply w-96 h-96;
     }
 }
