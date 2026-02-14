@@ -19,17 +19,17 @@
     <div class="bg-blob bottom-[8%] right-[28%] bg-yellow-600/20 animation-delay-3000"></div>
 </div>
 
-<header id="header">
-    <nav>
-        <ul>
+<header id="header" class="fixed top-4 left-0 right-0 z-50 flex justify-center px-4">
+    <nav class="glass rounded-full px-6 py-3 shadow-2xl shadow-purple-900/20">
+        <ul class="flex items-center gap-8 text-sm font-medium tracking-wide">
             <li>
-                <a href="#hero">Start</a>
+                <a href="#hero" class="nav-list">Start</a>
             </li>
             <li>
-                <a href="#game">Game</a>
+                <a href="#game" class="nav-list">Game</a>
             </li>
             <li>
-                <a href="#bingo">Bingo</a>
+                <a href="#bingo" class="nav-list">Bingo</a>
             </li>
         </ul>
     </nav>
@@ -37,61 +37,63 @@
 
 <main id="main" class="relative">
 
-    <section id="hero">
-        <div>
-            <div>
-                <span></span>
-                HitStar Companion
-            </div>
+    <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-4 relative">
+        <div class="space-y-6 max-w-4xl z-10">
 
-            <h1>
+            <h1 class="text-6xl md:text-8xl font-black tracking-tight leading-tight">
                 Music Bingo <br>
-                <span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500">
                     Reimagined.
                 </span>
             </h1>
 
-            <p>
-                Erweitere dein Spielerlebnis. Generiere Bingo-Karten, würfle Kategorien und verbinde dich (bald) mit
-                Spotify.
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light">
+                Erweitere dein Spielerlebnis. Generiere Bingo-Karten, erstelle eigene Kategorien oder bediene dich an den
+                Standard Kategorien und würfle diese.
             </p>
 
-            <div>
-                <a href="#game">
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <a href="#game"
+                   class="group relative px-8 py-3 rounded-full bg-white text-gray-900 font-bold overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)]">
                     <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 opacity-0 group-hover:opacity-20 transition-opacity"></div>
                     <span class="relative">Spiel starten</span>
                 </a>
-                <a href="#bingo">
+                <a href="#bingo"
+                   class="px-8 py-3 rounded-full border border-white/10 hover:bg-white/5 transition-all font-medium">
                     Karte erstellen
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="game">
-        <div>
-            <div>
-                <h2>Das Dashboard</h2>
-                <p>Würfle Kategorien oder checke deine Bingo-Karte.</p>
+    <section id="game" class="py-32 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Das Dashboard</h2>
+                <p class="text-gray-400">Würfle Kategorien oder checke deine Bingo-Karte.</p>
             </div>
 
-            <div>
-                <div>
-                    <div>
-                        <span>🎲</span>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="glass rounded-3xl p-8 flex flex-col items-center justify-center min-h-[400px] hover:border-pink-500/30 transition-colors cursor-pointer group">
+                    <div class="w-24 h-24 bg-gradient-to-br from-gray-800 to-black rounded-2xl flex items-center justify-center shadow-inner mb-6 group-hover:scale-110 transition-transform duration-500">
+                        <span class="text-4xl">🎲</span>
                     </div>
-                    <h3>Kategorie würfeln</h3>
-                    <p>Zufällige Auswahl aus Standard & Custom Pools</p>
+                    <h3 class="text-2xl font-bold mb-2">Kategorie würfeln</h3>
+                    <p class="text-gray-500 text-center text-sm">Zufällige Auswahl aus Standard & Custom Pools</p>
                 </div>
 
-                <div>
-                    <div></div>
-                    <div>
-
+                <div class="glass rounded-3xl p-8 relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10 pointer-events-none"></div>
+                    <div class="grid grid-cols-5 gap-2 opacity-50 group-hover:opacity-80 transition-opacity duration-500">
+                        <div class="bingo-box"></div>
+                        <div class="bingo-box bg-pink-500/20 rounded-md border border-pink-500/50"></div>
+                        <div class="bingo-box"></div>
+                        <div class="bingo-box"></div>
+                        <div class="bingo-box"></div>
                     </div>
-                    <div>
-                        <h3>Aktive Bingo Karte</h3>
-                        <p>Spiel läuft...</p>
+                    <div class="absolute bottom-8 left-8 z-20">
+                        <h3 class="text-2xl font-bold text-white">Aktive Bingo Karte</h3>
+                        <p class="text-green-400 text-sm">Spiel läuft...</p>
                     </div>
                 </div>
             </div>
@@ -100,7 +102,7 @@
 
 </main>
 
-<footer>
+<footer class="py-12 text-center text-gray-600 text-sm border-t border-white/5">
     <p>Entwickelt als Erweiterung für HitStar - s/o an Leo.</p>
 </footer>
 

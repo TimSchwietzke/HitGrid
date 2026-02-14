@@ -15,6 +15,10 @@
 }
 @layer components {
 
+    .glass {
+        @apply bg-white/[0.03] backdrop-blur-[10px];
+        @apply border border-white/[0.05];
+    }
 
     .bg-blob {
         @apply absolute;
@@ -26,5 +30,13 @@
         @apply opacity-30;
         @apply animate-blob;
         @apply w-96 h-96;
+    }
+
+    .nav-list {
+        @apply hover:text-pink-400 transition-colors duration-300;
+    }
+
+    .bingo-box {
+        @apply aspect-square bg-white/10 rounded-md;
     }
 }
