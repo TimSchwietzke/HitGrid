@@ -69,7 +69,7 @@ Möchtest du das Projekt lokal testen oder weiterentwickeln?
 
 1.  **Repository klonen**
     ```bash
-    git clone [https://github.com/DEIN-USERNAME/hitgrid.git](https://github.com/DEIN-USERNAME/hitgrid.git)
+    git clone [https://github.com/TimSchwietzke/HitGrid.git](https://github.com/TimSchwietzke/HitGrid.git)
     cd hitgrid
     ```
 
