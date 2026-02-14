@@ -1,5 +1,14 @@
 {
+  "name": "HitGrid",
+  "version": "0.2.1",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/index.css -o ./src/css/output.css --watch"
+  },
   "devDependencies": {
-    "tailwindcss": "^4.1.18"
-  }
+    "tailwindcss": "^4.1.18",
+    "@tailwindcss/cli": "^4.1.18"
+  },
+  "keywords": ["Game Friends"],
+  "license": "MIT",
+  "author" : "Tim Schwietzke"
 }
